@@ -1,0 +1,6 @@
+@usercenter_backend_HostAddress = http://localhost:5058
+
+GET {{usercenter_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
