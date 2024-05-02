@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\request\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\request\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\checkpwdrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\checkpwdrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,50 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CheckPwdRequest.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\Model\\CheckPwdRequest.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
-              "RelativeToolTip": "usercenter-backend\\Model\\CheckPwdRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T14:58:40.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserLoginRequest.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
-              "RelativeToolTip": "usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T14:57:29.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "usercenter-backend\\Controllers\\UserController.cs",
-              "ViewState": "AQIAALIAAAAAAAAAAAAAAMYAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:47:59.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Role.cs",
               "RelativeDocumentMoniker": "usercenter-backend\\Model\\Role.cs",
@@ -98,20 +59,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json",
+              "RelativeDocumentMoniker": "usercenter-backend\\appsettings.json",
+              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json",
+              "RelativeToolTip": "usercenter-backend\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-01T07:22:25.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\User.cs",
               "RelativeDocumentMoniker": "usercenter-backend\\Model\\User.cs",
               "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\User.cs",
               "RelativeToolTip": "usercenter-backend\\Model\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBAAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T15:37:26.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "UserLoginRequest.cs",
+              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
+              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
+              "RelativeToolTip": "usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:57:29.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "usercenter-backend\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAABAAAAAAAAAAArwAcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:47:59.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CheckPwdRequest.cs",
+              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Model\\CheckPwdRequest.cs",
+              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
+              "RelativeToolTip": "usercenter-backend\\Model\\CheckPwdRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:58:40.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Program.cs",
               "RelativeDocumentMoniker": "usercenter-backend\\Program.cs",
@@ -119,8 +131,7 @@
               "RelativeToolTip": "usercenter-backend\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAADcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:33:50.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T15:33:50.519Z"
             },
             {
               "$type": "Document",
@@ -133,19 +144,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T15:38:02.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json",
-              "RelativeDocumentMoniker": "usercenter-backend\\appsettings.json",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json",
-              "RelativeToolTip": "usercenter-backend\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-01T07:22:25.3Z",
-              "EditorCaption": ""
             }
           ]
         }

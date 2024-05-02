@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace usercenter_backend.Model
 {
@@ -10,6 +11,10 @@ namespace usercenter_backend.Model
         public DateTime CreateTime { get; set; }
         public DateTime UpdateTime { get; set; }
         public bool IsDelete { get; set; }
+
+        // This property will not be mapped to the database
+        [NotMapped]
+        public bool IsAdmin { get; set; }
 
     }
 }

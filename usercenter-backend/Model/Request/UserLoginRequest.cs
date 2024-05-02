@@ -1,5 +1,5 @@
 ﻿namespace usercenter_backend.Model.Request
 {
-    public record UserLoginRequest(string userAccount, string userPassword);
+    public record UserLoginResponse(string userAccount, string userPassword);
 
 }

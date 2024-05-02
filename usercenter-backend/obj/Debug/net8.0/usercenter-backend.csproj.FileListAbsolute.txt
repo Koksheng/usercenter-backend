@@ -150,3 +150,4 @@ D:\Code\星球项目\usercenter-backend\usercenter-backend\bin\Debug\net8.0\Seri
 D:\Code\星球项目\usercenter-backend\usercenter-backend\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\Code\星球项目\usercenter-backend\usercenter-backend\bin\Debug\net8.0\Serilog.Sinks.File.dll
 D:\Code\星球项目\usercenter-backend\usercenter-backend\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Code\星球项目\usercenter-backend\usercenter-backend\obj\Debug\net8.0\usercenter-backend.sourcelink.json

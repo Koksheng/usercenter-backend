@@ -185,7 +185,7 @@ namespace IdentityFramework.Controllers
         private const string USER_LOGIN_STATE = "userLoginState";
 
         [HttpPost]
-        public async Task<User?> userLogin(UserLoginRequest userLoginRequest)
+        public async Task<User?> userLogin(UserLoginResponse userLoginRequest)
         {
             if (userLoginRequest == null)
             {
@@ -262,9 +262,7 @@ namespace IdentityFramework.Controllers
                 HttpContext.Session.SetString(USER_LOGIN_STATE, serializedSafetyUser);
             }
 
-            var username = HttpContext.Session.GetString(USER_LOGIN_STATE);
-
-
+            safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
             return safetyUser;
         }
 
@@ -279,6 +277,7 @@ namespace IdentityFramework.Controllers
             safetyUser.Email = user.Email;
             safetyUser.UserStatus = user.UserStatus;
             safetyUser.CreateTime = user.CreateTime;
+
             return safetyUser;
         }
 
