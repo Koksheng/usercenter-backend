@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("usercenter-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc8a8fedd26fa3db23ec05464139dc1d3d7e928")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dc84f72ab4219007036bc6b28529fd0f00d72ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("usercenter-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("usercenter-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

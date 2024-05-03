@@ -1,38 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\",
+  "WorkspaceRootPath": "D:\\work\\Self learn\\usercenter-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Migrations\\20240503000107_init_to_office2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:usercenter-backend\\Migrations\\20240503000107_init_to_office2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\request\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\request\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\model\\checkpwdrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\checkpwdrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\dbcontextdesigntimefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\dbcontextdesigntimefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Migrations\\20240502235748_init_to_office.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:usercenter-backend\\Migrations\\20240502235748_init_to_office.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\model\\request\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\request\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|d:\\work\\self learn\\usercenter-backend\\usercenter-backend\\model\\checkpwdrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82E7D8A0-5DEA-4DD9-B497-43DB31AEDFED}|usercenter-backend\\usercenter-backend.csproj|solutionrelative:usercenter-backend\\model\\checkpwdrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,28 +54,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Role.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\Model\\Role.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Role.cs",
-              "RelativeToolTip": "usercenter-backend\\Model\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "DbContextDesignTimeFactory.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\DbContextDesignTimeFactory.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\DbContextDesignTimeFactory.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\DbContextDesignTimeFactory.cs",
+              "RelativeToolTip": "usercenter-backend\\DbContextDesignTimeFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:40:05.995Z",
+              "WhenOpened": "2024-05-02T23:59:28.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\User.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Model\\User.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\User.cs",
+              "RelativeToolTip": "usercenter-backend\\Model\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:37:26.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "usercenter-backend\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACkBAAAAAAAAAAAmwDYBAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:47:59.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "20240503000107_init_to_office2.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Migrations\\20240503000107_init_to_office2.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Migrations\\20240503000107_init_to_office2.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Migrations\\20240503000107_init_to_office2.cs",
+              "RelativeToolTip": "usercenter-backend\\Migrations\\20240503000107_init_to_office2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T00:01:07.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240502235748_init_to_office.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Migrations\\20240502235748_init_to_office.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Migrations\\20240502235748_init_to_office.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Migrations\\20240502235748_init_to_office.cs",
+              "RelativeToolTip": "usercenter-backend\\Migrations\\20240502235748_init_to_office.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T23:57:49.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Program.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Program.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Program.cs",
+              "RelativeToolTip": "usercenter-backend\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:33:50.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\MyDbContext.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\MyDbContext.cs",
+              "RelativeToolTip": "usercenter-backend\\MyDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:38:02.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\appsettings.json",
               "RelativeDocumentMoniker": "usercenter-backend\\appsettings.json",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\appsettings.json",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\appsettings.json",
               "RelativeToolTip": "usercenter-backend\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -72,24 +166,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\User.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\Model\\User.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\User.cs",
-              "RelativeToolTip": "usercenter-backend\\Model\\User.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAwBAAAAATAAAA",
+              "DocumentIndex": 8,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\Role.cs",
+              "RelativeDocumentMoniker": "usercenter-backend\\Model\\Role.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\Role.cs",
+              "RelativeToolTip": "usercenter-backend\\Model\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:37:26.223Z",
+              "WhenOpened": "2024-04-28T15:40:05.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "UserLoginRequest.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
               "RelativeDocumentMoniker": "usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
               "RelativeToolTip": "usercenter-backend\\Model\\Request\\UserLoginRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -98,52 +192,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "usercenter-backend\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAABAAAAAAAAAAArwAcBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:47:59.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "CheckPwdRequest.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
+              "DocumentMoniker": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
               "RelativeDocumentMoniker": "usercenter-backend\\Model\\CheckPwdRequest.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
+              "ToolTip": "D:\\work\\Self learn\\usercenter-backend\\usercenter-backend\\Model\\CheckPwdRequest.cs",
               "RelativeToolTip": "usercenter-backend\\Model\\CheckPwdRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T14:58:40.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Program.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\Program.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\Program.cs",
-              "RelativeToolTip": "usercenter-backend\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADcAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:33:50.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MyDbContext.cs",
-              "DocumentMoniker": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\MyDbContext.cs",
-              "RelativeDocumentMoniker": "usercenter-backend\\MyDbContext.cs",
-              "ToolTip": "D:\\Code\\\u661F\u7403\u9879\u76EE\\usercenter-backend\\usercenter-backend\\MyDbContext.cs",
-              "RelativeToolTip": "usercenter-backend\\MyDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T15:38:02.214Z"
+              "WhenOpened": "2024-05-01T14:58:40.787Z",
+              "EditorCaption": ""
             }
           ]
         }
