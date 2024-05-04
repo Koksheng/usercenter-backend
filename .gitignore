@@ -1,1 +1,8 @@
 .vs/
+
+# Ignore files and directories in obj/ directory
+obj/
+
+# Ignore specific files in obj/ directory
+obj/*.cs
+obj/*.cache
