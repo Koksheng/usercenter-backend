@@ -6,3 +6,11 @@ obj/
 # Ignore specific files in obj/ directory
 obj/*.cs
 obj/*.cache
+/Logs/Serilog20240503.log
+/usercenter-backend/bin/Debug/net8.0/usercenter-backend.dll
+/usercenter-backend/bin/Debug/net8.0/usercenter-backend.exe
+/usercenter-backend/bin/Debug/net8.0/usercenter-backend.pdb
+/usercenter-backend/obj/project.assets.json
+/usercenter-backend/obj/project.nuget.cache
+/usercenter-backend/obj/usercenter-backend.csproj.nuget.dgspec.json
+/usercenter-backend/obj/usercenter-backend.csproj.nuget.g.props

@@ -43,7 +43,7 @@ namespace IdentityFramework.Controllers
             if (user1 == null)
             {
                 user1 = new User { UserName = "yzk" };
-                var result = await userManager.CreateAsync(user1, "123456");
+                var result = await userManager.CreateAsync(user1, "12345678");
                 if (!result.Succeeded) return BadRequest("userManager CreateAsync failed");
             }
             if (!await userManager.IsInRoleAsync(user1, "admin"))
@@ -271,6 +271,7 @@ namespace IdentityFramework.Controllers
             User safetyUser = new User();
             safetyUser.Id = user.Id;
             safetyUser.UserName = user.UserName;
+            safetyUser.NormalizedUserName = user.NormalizedUserName;
             safetyUser.AvatarUrl = user.AvatarUrl;
             safetyUser.Gender = user.Gender;
             safetyUser.PhoneNumber = user.PhoneNumber;
@@ -307,7 +308,7 @@ namespace IdentityFramework.Controllers
             return true;
         }
 
-        [HttpPost]
+        [HttpGet]
         public async Task<IEnumerable<User>?> searchUsers(string username)
         {
 
@@ -322,21 +323,21 @@ namespace IdentityFramework.Controllers
                 return null;
             }
 
-            var users = await userManager.Users.Where(u => u.UserName.Contains(username)&&u.IsDelete==false)
+            var users = await userManager.Users.Where(u => u.UserName.Contains(username) && u.IsDelete == false)
             .ToListAsync();
 
             // Create a list to store simplified user objects
-            List<User> safetyUsers = new List<User>();
+            List<User> safetyUsersList = new List<User>();
 
             // Loop through each user and call getSafetyUser to get simplified user object
             foreach (var user in users)
             {
                 var safetyUser = await getSafetyUser(user);
-                safetyUsers.Add(safetyUser);
+                safetyUsersList.Add(safetyUser);
             }
 
             // Return the list of simplified user objects
-            return safetyUsers;
+            return safetyUsersList;
         }
 
         [HttpPost]
@@ -358,7 +359,7 @@ namespace IdentityFramework.Controllers
             {
                 return false;
             }
-            if(user.IsDelete == true)
+            if (user.IsDelete == true)
             {
                 return false;
             }
@@ -372,6 +373,28 @@ namespace IdentityFramework.Controllers
             }
 
             return true; // Soft delete successful
+        }
+
+        [HttpGet]
+        public async Task<User> getCurrentUser()
+        {
+            var userState = HttpContext.Session.GetString(USER_LOGIN_STATE);
+            if (string.IsNullOrWhiteSpace(userState))
+            {
+                return null;
+            }
+
+
+            // 1. get user by id
+            var loggedInUser = JsonConvert.DeserializeObject<User>(userState);
+            var user = await userManager.FindByIdAsync(loggedInUser.Id.ToString());
+            if (user == null || user.IsDelete)
+            {
+                return null;
+            }
+            var safetyUser = await getSafetyUser(user);
+            safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
+            return safetyUser;
         }
     }
 }
