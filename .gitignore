@@ -14,3 +14,4 @@ obj/*.cache
 /usercenter-backend/obj/project.nuget.cache
 /usercenter-backend/obj/usercenter-backend.csproj.nuget.dgspec.json
 /usercenter-backend/obj/usercenter-backend.csproj.nuget.g.props
+/Logs/Serilog20240504.log

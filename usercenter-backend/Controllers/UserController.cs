@@ -309,7 +309,7 @@ namespace IdentityFramework.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<User>?> searchUsers(string username)
+        public async Task<IEnumerable<User>?> searchUsers(string? username)
         {
 
             // 1. verify permission role
@@ -320,7 +320,7 @@ namespace IdentityFramework.Controllers
 
             if (string.IsNullOrWhiteSpace(username))
             {
-                return null;
+                username = "";
             }
 
             var users = await userManager.Users.Where(u => u.UserName.Contains(username) && u.IsDelete == false)
@@ -333,6 +333,7 @@ namespace IdentityFramework.Controllers
             foreach (var user in users)
             {
                 var safetyUser = await getSafetyUser(user);
+                safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
                 safetyUsersList.Add(safetyUser);
             }
 
