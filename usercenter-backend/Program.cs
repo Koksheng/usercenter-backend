@@ -32,8 +32,8 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddDbContext<MyDbContext>(opt =>
 {
-    //opt.UseSqlServer("Server=.;Database=usercenter;Trusted_Connection=True;TrustServerCertificate=True;");
-    opt.UseSqlServer("Server=(localdb)\\Local;Database=usercenter;Trusted_Connection=True;TrustServerCertificate=True;");
+    opt.UseSqlServer("Server=.;Database=usercenter;Trusted_Connection=True;TrustServerCertificate=True;");
+    //opt.UseSqlServer("Server=(localdb)\\Local;Database=usercenter;Trusted_Connection=True;TrustServerCertificate=True;");
 });
 builder.Services.AddDataProtection();
 builder.Services.AddIdentityCore<User>(options =>
