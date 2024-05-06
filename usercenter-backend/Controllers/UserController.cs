@@ -136,7 +136,8 @@ namespace IdentityFramework.Controllers
             if (userRegisterRequest == null)
             {
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                return ResultUtils.error<long>(ErrorCode.PARAMS_ERROR);
             }
             string userAccount = userRegisterRequest.userAccount;
             string userPassword = userRegisterRequest.userPassword;
@@ -236,7 +237,8 @@ namespace IdentityFramework.Controllers
             string pattern = @"[^a-zA-Z0-9\s]";
             if (Regex.IsMatch(userAccount, pattern))
             {
-                return null;
+                //return null;
+                return ResultUtils.error<User>(ErrorCode.PARAMS_ERROR);
             }
 
             // 2. check user is exist

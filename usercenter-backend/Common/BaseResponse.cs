@@ -1,13 +1,14 @@
 ﻿namespace usercenter_backend.Common
 {
-    public record BaseResponse<T>(int code, T data, string message = "")
+    public record BaseResponse<T>(int code, T data, string message = "", string description = "")
     {
         //// Constructor overload with two parameters
         //public BaseResponse(int code, T data) : this(code, data, "")
         //{
         //}
-    };
 
+    };
+    
 
     //// Creating BaseResponse with int data
     //var response1 = new BaseResponse<int>(200, 123, "Success");
