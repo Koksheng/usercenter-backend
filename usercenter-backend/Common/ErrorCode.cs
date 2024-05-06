@@ -18,6 +18,7 @@
         public static readonly ErrorCode NULL_ERROR = new ErrorCode(40001, "请求数据为空", "");
         public static readonly ErrorCode NOT_LOGIN = new ErrorCode(40100, "未登录", "");
         public static readonly ErrorCode NO_AUTH = new ErrorCode(40101, "无权限", "");
+        public static readonly ErrorCode STSTEM_ERROR = new ErrorCode(50000, "系统内部异常", "");
         // Add more error codes as needed
     }
 

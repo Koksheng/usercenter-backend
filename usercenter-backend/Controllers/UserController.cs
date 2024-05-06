@@ -8,6 +8,7 @@ using System.Numerics;
 using System.Runtime.Intrinsics.X86;
 using System.Text.RegularExpressions;
 using usercenter_backend.Common;
+using usercenter_backend.Exception;
 using usercenter_backend.Model;
 using usercenter_backend.Model.Request;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
@@ -137,7 +138,8 @@ namespace IdentityFramework.Controllers
             {
                 //return -1;
                 //return new BaseResponse<long>(-1, 0);
-                return ResultUtils.error<long>(ErrorCode.PARAMS_ERROR);
+                //return ResultUtils.error<long>(ErrorCode.PARAMS_ERROR);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "请求参数为空");
             }
             string userAccount = userRegisterRequest.userAccount;
             string userPassword = userRegisterRequest.userPassword;
@@ -148,33 +150,39 @@ namespace IdentityFramework.Controllers
             if (string.IsNullOrWhiteSpace(userAccount) || string.IsNullOrWhiteSpace(userPassword) || string.IsNullOrWhiteSpace(checkPassword) || string.IsNullOrWhiteSpace(planetCode))
             {
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "请求参数为空");
             }
             if (userAccount.Length < 4)
             {
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "用户账户过短");
             }
             if (userPassword.Length < 8 || checkPassword.Length < 8)
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0)；
+            throw new BusinessException(ErrorCode.PARAMS_ERROR, "账户密码过短");
 
             if (planetCode.Length > 5)
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "星球编号过长");
 
             // userAccount cant contain special character
             string pattern = @"[^a-zA-Z0-9\s]";
             if (Regex.IsMatch(userAccount, pattern))
             {
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "用户账户有特殊字符");
             }
             // userPassword & checkPassword must same
             if (!userPassword.Equals(checkPassword))
             {
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "账户密码与检查密码不对等");
             }
 
             // userAccount cant existed
@@ -183,7 +191,8 @@ namespace IdentityFramework.Controllers
             {
                 if (user.IsDelete == false)
                     //return -1;
-                    return new BaseResponse<long>(-1, 0);
+                    //return new BaseResponse<long>(-1, 0);
+                    throw new BusinessException(ErrorCode.NULL_ERROR, "用户账户已有注册记录");
             }
 
             // planetCode cant existed
@@ -191,7 +200,8 @@ namespace IdentityFramework.Controllers
             if (planetCodeExists)
             {
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                throw new BusinessException(ErrorCode.NULL_ERROR, "星球编号已有注册记录");
             }
 
             // 2. 加密 (.net core IdentityUser will encrypt themself
@@ -201,7 +211,8 @@ namespace IdentityFramework.Controllers
             var result = await userManager.CreateAsync(user, userPassword);
             if (!result.Succeeded)
                 //return -1;
-                return new BaseResponse<long>(-1, 0);
+                //return new BaseResponse<long>(-1, 0);
+                throw new BusinessException(ErrorCode.STSTEM_ERROR, "创建数据失败");
 
             //return user.Id;
             //return new BaseResponse<long>(0, user.Id);
@@ -215,30 +226,36 @@ namespace IdentityFramework.Controllers
         {
             if (userLoginRequest == null)
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "请求参数为空");
             }
             string userAccount = userLoginRequest.userAccount;
             string userPassword = userLoginRequest.userPassword;
 
-            logger.LogWarning($"{userAccount} trying to userLogin with password: {userPassword}");
+            //logger.LogWarning($"{userAccount} trying to userLogin with password: {userPassword}");
 
             // 1. Verify
             if (string.IsNullOrWhiteSpace(userAccount) || string.IsNullOrWhiteSpace(userPassword))
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "请求参数为空");
             }
             if (userAccount.Length < 4)
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "用户账户过短");
             }
             if (userPassword.Length < 8)
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "账户密码过短");
+
             // userAccount cant contain special character
             string pattern = @"[^a-zA-Z0-9\s]";
             if (Regex.IsMatch(userAccount, pattern))
             {
                 //return null;
-                return ResultUtils.error<User>(ErrorCode.PARAMS_ERROR);
+                //return ResultUtils.error<User>(ErrorCode.PARAMS_ERROR);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "用户账户有特殊字符");
             }
 
             // 2. check user is exist
@@ -246,21 +263,25 @@ namespace IdentityFramework.Controllers
             if (user == null)
             {
                 logger.LogWarning($"user login failed, userAccount={userAccount} cannot be found");
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NULL_ERROR, "找不到该用户");
             }
             if (user.IsDelete == true)
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NULL_ERROR, "找不到该用户 用户已被删除");
             }
             if (await userManager.IsLockedOutAsync(user))
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NULL_ERROR, "找不到该用户 用户已被锁定");
             }
             if (!await userManager.CheckPasswordAsync(user, userPassword))
             {
                 logger.LogWarning($"user login failed, userAccount={userAccount} cannot matchh userPassword={userPassword}");
                 await userManager.AccessFailedAsync(user);
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "账户密码不对");
             }
 
             // 登录成功
@@ -301,7 +322,8 @@ namespace IdentityFramework.Controllers
             if (string.IsNullOrWhiteSpace(userState))
             {
                 //return -1;
-                return new BaseResponse<int>(-1, 0);
+                //return new BaseResponse<int>(-1, 0);
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "session里找不到用户状态");
             }
             HttpContext.Session.Remove(USER_LOGIN_STATE);
             //return 1;
@@ -373,7 +395,8 @@ namespace IdentityFramework.Controllers
             // 1. verify permission role
             if (!await verifyIsAdminRoleAsync())
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NO_AUTH, "用户没权限");
             }
 
             if (string.IsNullOrWhiteSpace(username))
@@ -407,25 +430,29 @@ namespace IdentityFramework.Controllers
             if (!await verifyIsAdminRoleAsync())
             {
                 //return false;
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NO_AUTH, "用户没权限");
             }
 
             if (id < 0)
             {
                 //return false;
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "请求参数为空");
             }
 
             var user = await userManager.FindByIdAsync(id.ToString());
             if (user == null)
             {
                 //return false;
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NULL_ERROR, "找不到该用户");
             }
             if (user.IsDelete == true)
             {
                 //return false;
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NULL_ERROR, "找不到该用户 用户已被删除");
             }
 
             // user not null && user.IsDelete = False
@@ -434,7 +461,8 @@ namespace IdentityFramework.Controllers
             if (!result.Succeeded)
             {
                 //return false; // Soft delete fail
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.STSTEM_ERROR, "创建数据失败");
             }
 
             //return true; // Soft delete successful
@@ -448,7 +476,8 @@ namespace IdentityFramework.Controllers
             var userState = HttpContext.Session.GetString(USER_LOGIN_STATE);
             if (string.IsNullOrWhiteSpace(userState))
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.PARAMS_ERROR, "session里找不到用户状态");
             }
 
 
@@ -457,7 +486,8 @@ namespace IdentityFramework.Controllers
             var user = await userManager.FindByIdAsync(loggedInUser.Id.ToString());
             if (user == null || user.IsDelete)
             {
-                return null;
+                //return null;
+                throw new BusinessException(ErrorCode.NULL_ERROR, "找不到该用户");
             }
             var safetyUser = await getSafetyUser(user);
             //safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
