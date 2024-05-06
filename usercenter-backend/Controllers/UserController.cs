@@ -4,8 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Net.WebSockets;
+using System.Numerics;
 using System.Runtime.Intrinsics.X86;
 using System.Text.RegularExpressions;
+using usercenter_backend.Common;
 using usercenter_backend.Model;
 using usercenter_backend.Model.Request;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
@@ -128,39 +130,50 @@ namespace IdentityFramework.Controllers
          */
         /**/
         [HttpPost]
-        public async Task<long> userRegister(UserRegisterRequest userRegisterRequest)
+        public async Task<BaseResponse<long>> userRegister(UserRegisterRequest userRegisterRequest)
         {
             // userAccount = UserName in DB
             if (userRegisterRequest == null)
             {
-                return -1;
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
             }
             string userAccount = userRegisterRequest.userAccount;
             string userPassword = userRegisterRequest.userPassword;
             string checkPassword = userRegisterRequest.checkPassword;
+            string planetCode = userRegisterRequest.planetCode;
 
             // 1. Verify
-            if (string.IsNullOrWhiteSpace(userAccount) || string.IsNullOrWhiteSpace(userPassword) || string.IsNullOrWhiteSpace(checkPassword))
+            if (string.IsNullOrWhiteSpace(userAccount) || string.IsNullOrWhiteSpace(userPassword) || string.IsNullOrWhiteSpace(checkPassword) || string.IsNullOrWhiteSpace(planetCode))
             {
-                return -1;
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
             }
             if (userAccount.Length < 4)
             {
-                return -1;
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
             }
             if (userPassword.Length < 8 || checkPassword.Length < 8)
-                return -1;
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
+
+            if (planetCode.Length > 5)
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
 
             // userAccount cant contain special character
             string pattern = @"[^a-zA-Z0-9\s]";
             if (Regex.IsMatch(userAccount, pattern))
             {
-                return -1;
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
             }
             // userPassword & checkPassword must same
             if (!userPassword.Equals(checkPassword))
             {
-                return -1;
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
             }
 
             // userAccount cant existed
@@ -168,24 +181,36 @@ namespace IdentityFramework.Controllers
             if (user != null)
             {
                 if (user.IsDelete == false)
-                    return -1;
+                    //return -1;
+                    return new BaseResponse<long>(-1, 0);
+            }
+
+            // planetCode cant existed
+            var planetCodeExists = await userManager.Users.AnyAsync(u => u.PlanetCode == planetCode && !u.IsDelete);
+            if (planetCodeExists)
+            {
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
             }
 
             // 2. 加密 (.net core IdentityUser will encrypt themself
 
             // 3. Insert User to DB
-            user = new User { UserName = userAccount };
+            user = new User { UserName = userAccount, PlanetCode = planetCode };
             var result = await userManager.CreateAsync(user, userPassword);
             if (!result.Succeeded)
-                return -1;
+                //return -1;
+                return new BaseResponse<long>(-1, 0);
 
-            return user.Id;
+            //return user.Id;
+            //return new BaseResponse<long>(0, user.Id);
+            return ResultUtils.success(user.Id);
         }
 
         private const string USER_LOGIN_STATE = "userLoginState";
 
         [HttpPost]
-        public async Task<User?> userLogin(UserLoginResponse userLoginRequest)
+        public async Task<BaseResponse<User>?> userLogin(UserLoginResponse userLoginRequest)
         {
             if (userLoginRequest == null)
             {
@@ -262,8 +287,23 @@ namespace IdentityFramework.Controllers
                 HttpContext.Session.SetString(USER_LOGIN_STATE, serializedSafetyUser);
             }
 
-            safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
-            return safetyUser;
+            //safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
+            //return safetyUser;
+            return ResultUtils.success(safetyUser);
+        }
+
+        [HttpPost]
+        public async Task<BaseResponse<int>> userLogout()
+        {
+            var userState = HttpContext.Session.GetString(USER_LOGIN_STATE);
+            if (string.IsNullOrWhiteSpace(userState))
+            {
+                //return -1;
+                return new BaseResponse<int>(-1, 0);
+            }
+            HttpContext.Session.Remove(USER_LOGIN_STATE);
+            //return 1;
+            return ResultUtils.success(1);
         }
 
         private async Task<User> getSafetyUser(User user)
@@ -278,8 +318,22 @@ namespace IdentityFramework.Controllers
             safetyUser.Email = user.Email;
             safetyUser.UserStatus = user.UserStatus;
             safetyUser.CreateTime = user.CreateTime;
+            safetyUser.PlanetCode = user.PlanetCode;
+
+            safetyUser.IsAdmin = await getIsAdmin(user);
 
             return safetyUser;
+        }
+
+        private async Task<bool> getIsAdmin(User user)
+        {
+            var role_list = await userManager.GetRolesAsync(user);
+
+            if (!role_list.Contains("admin"))
+            {
+                return false;
+            }
+            return true;
         }
 
         private async Task<bool> verifyIsAdminRoleAsync()
@@ -299,17 +353,19 @@ namespace IdentityFramework.Controllers
                 return false;
             }
 
-            var role_list = await userManager.GetRolesAsync(user);
+            return await getIsAdmin(user);
 
-            if (!role_list.Contains("admin"))
-            {
-                return false;
-            }
-            return true;
+            //var role_list = await userManager.GetRolesAsync(user);
+
+            //if (!role_list.Contains("admin"))
+            //{
+            //    return false;
+            //}
+            //return true;
         }
 
         [HttpGet]
-        public async Task<IEnumerable<User>?> searchUsers(string? username)
+        public async Task<BaseResponse<List<User>>?> searchUsers(string? username)
         {
 
             // 1. verify permission role
@@ -333,36 +389,41 @@ namespace IdentityFramework.Controllers
             foreach (var user in users)
             {
                 var safetyUser = await getSafetyUser(user);
-                safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
+                //safetyUser.IsAdmin = await getIsAdmin(user);
                 safetyUsersList.Add(safetyUser);
             }
 
             // Return the list of simplified user objects
-            return safetyUsersList;
+            //return safetyUsersList;
+            return ResultUtils.success(safetyUsersList);
         }
 
         [HttpPost]
-        public async Task<bool> deleteUser(long id)
+        public async Task<BaseResponse<bool>?> deleteUser(long id)
         {
             // 1. verify permission role
             if (!await verifyIsAdminRoleAsync())
             {
-                return false;
+                //return false;
+                return null;
             }
 
             if (id < 0)
             {
-                return false;
+                //return false;
+                return null;
             }
 
             var user = await userManager.FindByIdAsync(id.ToString());
             if (user == null)
             {
-                return false;
+                //return false;
+                return null;
             }
             if (user.IsDelete == true)
             {
-                return false;
+                //return false;
+                return null;
             }
 
             // user not null && user.IsDelete = False
@@ -370,14 +431,17 @@ namespace IdentityFramework.Controllers
             var result = await userManager.UpdateAsync(user);
             if (!result.Succeeded)
             {
-                return false; // Soft delete fail
+                //return false; // Soft delete fail
+                return null;
             }
 
-            return true; // Soft delete successful
+            //return true; // Soft delete successful
+            return ResultUtils.success(true);
+
         }
 
         [HttpGet]
-        public async Task<User> getCurrentUser()
+        public async Task<BaseResponse<User>?> getCurrentUser()
         {
             var userState = HttpContext.Session.GetString(USER_LOGIN_STATE);
             if (string.IsNullOrWhiteSpace(userState))
@@ -394,8 +458,9 @@ namespace IdentityFramework.Controllers
                 return null;
             }
             var safetyUser = await getSafetyUser(user);
-            safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
-            return safetyUser;
+            //safetyUser.IsAdmin = await verifyIsAdminRoleAsync();
+            //return safetyUser;
+            return ResultUtils.success(safetyUser);
         }
     }
 }

@@ -18,3 +18,4 @@ obj/*.cache
 .vs/
 /Logs/Serilog20240503.log
 /.vs/usercenter-backend/v17/.suo
+/Logs

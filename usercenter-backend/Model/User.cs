@@ -15,6 +15,7 @@ namespace usercenter_backend.Model
         // This property will not be mapped to the database
         [NotMapped]
         public bool IsAdmin { get; set; }
+        public string PlanetCode { get; set; }
 
     }
 }
