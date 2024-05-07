@@ -477,7 +477,7 @@ namespace IdentityFramework.Controllers
             if (string.IsNullOrWhiteSpace(userState))
             {
                 //return null;
-                throw new BusinessException(ErrorCode.PARAMS_ERROR, "session里找不到用户状态");
+                throw new BusinessException(ErrorCode.NOT_LOGIN);
             }
 
 
